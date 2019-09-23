@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>#SaveNesamani | Codingmart Hiring</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeydown='moveNesamani(event)'>
+    <!-- timer -->
+    <div class="logo">
+        <img src="images/codingmart.png" alt="Codingmart Hiring">
+    </div>
+    <div class="bg-img">
+        <img src="./images/background.jpg">
+    </div>
+    <div class="bottom-container">
+        <div>
+            <img class="nesamaniJet" src="images/nesamani.png" alt="1">
+        </div>
+    </div>
+    <!-- timer -->
+    <div class="timer">
+        <label><span id="time">02:00</span></label>
+    </div>
+
+    <!-- Saved me modal -->
+    <div class="savepopup modal fade" id="myModal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="play-img">
+                    <img src="images/nesamani_saved.png">
+                </div>
+                <div class="play-content">
+                    <div class="play-text">
+                        <h2>You saved me!</h2>
+                        <label>...</label>
+                    </div>
+                    <div class="play-button">
+                        <a onclick="location.reload(true);">
+                            <img src="images/button.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Missed me modal -->
+    <div class="savepopup modal fade" id="missedModal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="play-img">
+                    <img id="missedNesamani" src="images/nesamani_hit.png">
+                </div>
+                <div class="play-content">
+                    <div class="play-text">
+                        <h2>You Missed me!</h2>
+                        <label>...</label>
+                    </div>
+                    <div class="play-button">
+                        <a onclick="location.reload(true);">
+                            <img src="images/button.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
